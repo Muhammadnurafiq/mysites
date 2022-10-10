@@ -1,0 +1,179 @@
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  margin: 3.125rem auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+  font-size: 5.625rem;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  margin: 0 auto auto auto;
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+hr {
+  border-style: dotted none none none;
+  border-width: 0.4rem;
+  width: 4rem;
+  color: #eaf6f6;
+  margin: 6.25rem auto 6.25rem auto;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eaf6f6;
+}
+
+p {
+  line-height: 2;
+}
+
+/* top container */
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 7rem;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 25rem;
+  top: 20rem;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 25rem;
+  top: 3rem;
+}
+
+/* middle-container */
+.profilepic {
+  border-style: groove;
+  border-radius: 50rem;
+  height: 12.5rem;
+  width: auto;
+  margin: 1rem 0 1rem 0;
+}
+
+.self-description {
+  text-align: center;
+  color: #40514E;
+  width: 450px;
+  margin: 2rem auto 0 auto;
+}
+
+/* contact-me */
+.contact-me {
+  margin: auto auto 0 auto;
+}
+
+.invite {
+  width: 30rem;
+  margin: auto;
+}
+
+/* button-container */
+.button-container {
+  margin: 0 auto 0 auto;
+}
+
+/* bottom-container */
+.bottom-container {
+  color: #11999E;
+  background-color: #66bfbf;
+  padding: 2rem 0 2rem 0;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 1rem auto 1rem auto;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.footer-link {
+  color: #11999E;
+}
+
+.copyright {
+  color: #eaf6f6;
+  margin: 2rem 0 0 0;
+  font-size: 0.75rem;
+}
+
+/* project section */
+#portfolio {
+  background-color: #E4F9F5;
+}
+
+#portfolio .portfolio-box {
+  text-align: center;
+  margin: auto;
+  padding: 5%;
+}
+
+#portfolio .container-fluid {
+  padding: 0;
+  height: 100%;
+}
+
+.portfolio-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.portfolio-image {
+  width: 20%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-control-next {
+  position: absolute;
+  left: 350px;
+}
+
+.carousel-control-prev {
+  position: absolute;
+  right: 350px;
+  left: -95px;
+}
+
+.heading-project {
+  padding-top: 20px;
+}
