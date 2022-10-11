@@ -53,15 +53,17 @@ p {
   background-color: #E4F9F5;
   position: relative;
   padding-top: 7rem;
+  width: 100%;
+  height: 100%;
 }
 
-.bottom-cloud {
+.bottom {
   position: absolute;
   left: 25rem;
   top: 20rem;
 }
 
-.top-cloud {
+.top {
   position: absolute;
   right: 25rem;
   top: 3rem;
@@ -136,44 +138,143 @@ p {
 }
 
 /* project section */
-#portfolio {
-  background-color: #E4F9F5;
+.pp .carousel-item {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
 }
 
-#portfolio .portfolio-box {
-  text-align: center;
-  margin: auto;
-  padding: 5%;
-}
-
-#portfolio .container-fluid {
-  padding: 0;
+.pp .carousel-item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
-.portfolio-name {
-  font-family: 'Inter', sans-serif;
-  font-size: 2rem;
-  line-height: 1.5;
-}
-
-.portfolio-image {
-  width: 20%;
-  border-radius: 100%;
-  margin: 20px;
-}
-
-.carousel-control-next {
+.pp .carousel-item .container {
   position: absolute;
-  left: 350px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.carousel-control-prev {
+.pp .carousel-item h2 {
+  font-size: 80px;
+  color: #ffffff;
+  margin: 0 0 10px;
+  opacity: 1;
+}
+
+.pp .carousel-item p {
+  font-size: 30px;
+  color: #eeeeee;
+  margin: 0;
+  opacity: 1;
+}
+
+.pp .carousel-controls {
   position: absolute;
-  right: 350px;
-  left: -95px;
+  left: 50%;
+  bottom: 40px;
+  z-index: 10;
+  transform: translate(-50%);
+}
+
+.pp .carousel-indicators {
+  position: relative;
+  margin: 0;
+}
+
+.pp .carousel-indicators li {
+  height: 70px;
+  width: 70px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid transparent;
+}
+
+.pp .carousel-indicators li.active {
+  border-color: #ffffff;
+  transform: scale(1.2);
+}
+
+.pp .carousel-control-next,
+.pp .carousel-control-prev {
+  height: 60px;
+  width: 60px;
+  opacity: 1;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  top: 20px;
+}
+
+.pp .carousel-control-next:hover,
+.pp .carousel-control-prev:hover {
+  box-shadow: 0 0 10px #ffffff;
+}
+
+.pp .carousel-control-next img,
+.pp .carousel-control-prev img {
+  width: 30px;
+}
+
+.pp .carousel-control-next {
+  right: -90px;
+}
+
+.pp .carousel-control-prev {
+  left: -90px;
 }
 
 .heading-project {
   padding-top: 20px;
+}
+
+/* responsive*/
+@media (max-width: 767px) {
+  .mountain {
+    width: 100%;
+    height: 100%;
+  }
+
+  .top, .bottom {
+    width: 20%;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .invite {
+    width: 100%;
+  }
+
+  .self-description {
+    width: 100%;
+  }
+
+  .pp .carousel-control-next,
+  .pp .carousel-control-prev {
+    display: none;
+  }
+
+  .pp .carousel-indicators li {
+    height: 20px;
+    width: 20px;
+  }
 }
